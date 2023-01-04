@@ -1,0 +1,2 @@
+!function(){const e=document.querySelector(".feedback-form"),t=(document.querySelector("input"),document.querySelector("textArea"),"feedback-form-state"),r={};e.addEventListener("submit",(function(e){e.preventDefault(),e.currentTarget.reset(),localStorage.removeItem(t),console.log(r),r.email="",r.message=""})),e.addEventListener("input",_.throttle((function(e){r[e.target.name]=e.target.value;let n=JSON.stringify(r);localStorage.setItem(t,n)}),500))}();
+//# sourceMappingURL=03-feedback.dbd5a3d9.js.map
