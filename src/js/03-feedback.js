@@ -29,8 +29,8 @@ function dataLocalStorage() {
 
   if (savedMessage) {
     let dataObject = JSON.parse(savedMessage);
-    emailEl.value = dataObject.email;
-    textEl.value = dataObject.message;
+    emailEl.value = dataObject.email || '';
+    textEl.value = dataObject.message || '';
     formData.email = dataObject.email;
     formData.message = dataObject.message;
   }
